@@ -1,0 +1,335 @@
+/*---- CSS FOR PUBLISHERS PROFILE BEGINS ----*/
+:root {
+    --primary-color: #59788e;
+    --secondary-color: #0e2433;
+}
+.Publisher * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Publisher {
+    background: var(--secondary-color);
+    overflow-x: hidden;
+    padding-top: 90px;
+    font-family: 'Lato', sans-serif;
+    margin: 0 100px;
+}
+.Publisher .profile-header {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    height: 180px;
+    position: relative;
+    box-shadow: 0px 5px 10px var(--primary-color);
+    border-radius: .6vh;
+}
+.Publisher .profile-img {
+    float: left;
+    width: 340px;
+    height: 200px;
+}
+.Publisher .profile-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0px 5px 10px var(--primary-colorcolor);
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    z-index: 5;
+    background: #fff;
+}
+.Publisher .profile-nav-info {
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+.Publisher .profile-nav-info h3 {
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.Publisher .profile-nav-info .address {
+    display: flex;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.Publisher .profile-nav-info .address p {
+    margin-right: 5px;
+}
+.Publisher .profile-option {
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    border: 1px solid #fff;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    outline: none;
+}
+.Publisher .profile-option .notification i {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.Publisher .profile-option:hover {
+    color: var(--secondary-color);
+    background: #fff;
+    border: 1px solid var(--primary-color);
+}
+.Publisher .profile-option:hover .notification i {
+    color: var(--secondary-color);
+}
+.Publisher .profile-option .notification .alert-message {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: 1px solid;
+    color: var(--secondary-color);
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.Publisher .main-body {
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+}
+.Publisher .profile-side {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0px 5px 10px var(--primary-color);
+    padding: 90px 30px 20px;
+    margin-left: 10px;
+    z-index: 99;
+}
+.Publisher .profile-side p {
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 14px;
+}
+.Publisher .profile-side p i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.Publisher .lorem { /* Probably change this part later!!!*/
+    visibility: hidden;
+    margin: 0; 
+    padding: 0;
+    font-size: 1rem;
+}
+.Publisher .profile-btn {
+    display: flex;
+    flex-direction: column;
+}
+.Publisher button.createbtn, button.editBtn {
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    width: 100%;
+    border-radius: 1vh;
+    background: #fff;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin: 5px 2px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background 300ms ease-in-out;
+}
+.Publisher button.createbtn:hover, button.editBtn:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.Publisher button.createbtn i, button.editBtn i {
+    margin-right: 5px;
+}
+
+.Publisher .user-rating {
+    display: flex;
+}
+.Publisher .user-rating h3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-right: 5px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+.Publisher .right-side {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px var(--primary-color);
+}
+.Publisher .user-rating .no-user {
+    font-size: .9rem;
+}
+.Publisher .rate {
+    padding-top: 6px;
+}
+.Publisher .rate i {
+    font-size: .9rem;
+    color: var(--secondary-color);
+}
+.Publisher .nav {
+    width: 100%;
+    z-index: -1;
+}
+.Publisher .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 5px var(--primary-color);
+}
+.Publisher .nav ul li {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.Publisher .nav ul li.active, .nav ul li:hover {
+    box-shadow: 0px -3px 0px var(--secondary-color) inset;
+
+}
+.Publisher .profile-body {
+    width: 100%;
+    z-index: -1;
+    font-size: 1.2rem;
+}
+.Publisher .tab {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.Publisher #see-more-bio {
+    color: blue;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+.Publisher #see-less-bio {
+    color: blue;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .Publisher .profile-side {
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+    .Publisher .profile-img img {
+        height: 180px;
+        width: 180px;
+        left: 50px;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Publisher  {
+        margin: 0 20px;
+    }
+    .Publisher .profile-header {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .Publisher .profile-img {
+        float: left;
+        width: 100%;
+        height: 200px;
+    }
+    .Publisher .profile-img img {
+        position: relative;
+        left: 0;
+    }
+    .Publisher .profile-nav-info {
+        text-align: center;
+    }
+    .Publisher .profile-nav-info .address {
+        justify-content: center;
+    }
+    .Publisher .profile-option {
+        right: 20px;
+        top: 75%;
+        transform: translateY(50%);
+    }
+    .Publisher .main-body {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .Publisher .profile-side {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 5px;
+    }
+    .Publisher .user-rating {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .Publisher {
+        margin: 5px;
+
+    }
+    .Publisher .profile-header h3 {
+        font-size: 1.7rem;
+    }
+    .Publisher .profile-header p , .profile-header span {
+        font-size: .9rem;
+    }
+    .Publisher .profile-header span {
+        font-size: .9rem;
+    }
+    .Publisher .profile-option {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 15px;
+        top: 83%;
+    }
+    .Publisher .profile-option .notification .alert-message {
+        top: -3px;
+        right: -4px;
+        padding: 4px;
+        height: 2px;
+        width: 15px;
+        font-size: .7rem;
+    }
+    .Publisher .profile-side {
+        margin-left: 0;
+    }
+}
+
+
+/*---- CSS FOR PUBLISHERS PROFILE ENDS ----*/
